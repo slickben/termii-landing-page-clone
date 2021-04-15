@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mx-auto">
+
+        <div class="home-x"></div>
+
+        <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 py-4">
+          <div x-data="{ open: false }" class="flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-0 lg:px-0">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <!-- logo link-->
+              <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+                <img class="h-8" src="./images/logo.png" alt="" srcset="">
+              </a>
+              <!-- responsive toggle button -->
+              <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                <img src="./images/SVG/193-menu4.svg" alt="" srcset="">
+              </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden lg:flex md:justify-end md:flex-row text-gray-500">
+
+              <a class="px-4 py-2 mt-2 text-sm font-semibold  dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Why Termii?</a>
+
+              <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Solutions</a>
+
+              <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Products</a>
+
+              <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Pricing</a>   
+
+              <a class="flex items-center px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#"> <span class="mr-2"><img class="h-5" src="./images/SVG/067-phone.svg" alt="" srcset=""></span> 234-9022557951</a>   
+
+              <div class="flex text-xs items-center">
+                  <a href="" class="mx-3 py-2 px-6 bg-gray-100 shadow-3xl rounded font-semibold">Login</a>
+                  <a href="" class="mx-3 py-2 px-6 bg-gradient-to-r from-blue-900 to-blue-400 rounded text-white shadow-3xl font-semibold">Sign Up</a>
+              </div>
+
+            </nav>
+          </div>
+        </div>
+
+        <div
+            class="container w-full xl:p-20  m-4 mx-auto my-8 text-center rounded-xl">
+
+            <div class="lg:grid grid-cols-12 max-w-6xl mx-auto  px-2 md:px-3 lg:px-6">
+
+                <div class="flex col-span-5  items-center px-6 ">
+                    <div class="">
+                        <h1 class="xl:text-4xl lg:text-2xl text-3xl md:text-3xl  font-semibold text-blue-900 text-left xl:leading-12 leading-11 ml2">Easily engage your customers anywhere.</h1>
+
+                        <p class="text-base lg:text-xs text-left xl:text-base text-gray-800 py-8 lg:py-10">Connect and verify customers seamlessly across  channels like sms, voice, email and whatsapp</p>
+
+                        <div class="flex items-center justify-start">
+                            <button href="" class="py-2 px-6 bg-gradient-to-r from-blue-900 to-blue-400 rounded-lg text-white shadow-3xl">Request A Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-6 col-span-7 hidden lg:block bg-intro-bg bg-top">
+                    <img src="./images/he-1_jamv1a.png" alt="" srcset="">
+                </div>
+
+            </div>
+            
+            <div class="pt-24 max-w-6xl  mx-auto">
+                <div class="mx-auto pt-10 hidden lg:block">
+                    <div class="hrr-5"></div>
+                </div>
+                <div class="text-center py-8 hidden md:block">
+                    <p class="text-gray-500">WE’RE A RELIABLE MESSAGING PLATFORM</p>
+                    <h2 class="text-gray-600 font-regular text-3xl">What to Expect From Us</h2>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <div class="grid lg:grid-cols-2 pt-16 gap-y-16 md:px-6 px-16">
+                        <div class="md:flex items-center md:px-6">
+                            <div class="md:pl-6">
+                                <img class="md:w-24 animate-bounce duration-1000" src="./images/chat.png" alt="" srcset="">
+                            </div>
+                            <div class="text-left md:px-6 text-gray-500">
+                                <h3 class="p-6 px-0">Cross-Channel Messaging</h3>
+    
+                                <p>Use sms, email, voice & IM channels to verify,  authenticate and engage customers</p>
+                            </div>
+                        </div>
+    
+                        <div class="md:flex items-center md:pl-6">
+                            <div class="md:pl-6">
+                                <img class="md:h-16 md:w-24 w-16 animate-bounce duration-1000" src="./images/check-mark.png" alt="" srcset="">
+                            </div>
+                            <div class="text-left md:px-6 text-gray-500">
+                                <h3 class="p-6 px-0">99.9% Delivery</h3>
+    
+                                <p>Improve delivery of OTP & Notifications by using  uniquely generated IDs and numbers</p>
+                            </div>
+                        </div>
+    
+                        <div class="md:flex items-center md:px-6">
+                            <div class="md:pl-6">
+                                <img class="md:w-24 animate-bounce duration-1000" src="./images/finance.png" alt="" srcset="">
+                            </div>
+                            <div class="text-left md:px-6 text-gray-500">
+                                <h3 class="p-6 px-0">Cost Savings</h3>
+    
+                                <p>Save cost by detecting restricted contacts and network changes before sending otp messages</p>
+                            </div>
+                        </div>
+    
+                        <div class="md:flex items-center md:pl-6">
+                            <div class="md:pl-6">
+                                <img class="md:w-24 animate-bounce duration-1000" src="./images/activity.png" alt="" srcset="">
+                            </div>
+                            <div class="text-left md:px-6 text-gray-500">
+                                <h3 class="p-6 px-0">Quick Integration</h3>
+    
+                                <p>Integrate messaging APIs to your application in less than 60 minutes using pre-installed configurations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-12 bg-transparent max-w-6xl  mx-auto">
+                <div class="mx-auto pt-10 hidden lg:block">
+                    <div class="hrr-5"></div>
+                </div>
+                <div class="text-center py-8 hidden md:block">
+                    <p class="text-gray-500">BUILT FOR DEVELOPERS  DIGITAL MARKETERS</p>
+                    <h2 class="text-gray-600 font-regular text-3xl">See Solutions Targeted To Your Roles</h2>
+                </div>
+
+                <div class="pt-20 grid lg:grid-cols-3 gap-x-10 lg:px-12 xl:px-8 px-16 ">
+                    <div class="rounded shadow bg-white">
+                        <div class="relative">
+                            <img class="" src="./images/cto-1_vpqnsg.png" alt="" srcset="">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <p class="text-white font-semibold text-xl">For Chief Technology Officers</p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-8">
+                            <p class="text-gray-500 text-left">
+                                Deploy the most cost-effective 
+                                 messaging solution trusted by fast  growing brands
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rounded shadow bg-white">
+                        <div class="relative">
+                            <img class="" src="./images/dev-1_xw0iuo.png" alt="" srcset="">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <p class="text-white font-semibold text-xl">For Software Engineers</p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-8">
+                            <p class="text-gray-500 text-left">
+                                Integrate in less than 60 minutes 
+                                messaging APIs with over 90% delivery rate globally
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rounded shadow bg-white">
+                        <div class="relative">
+                            <img class="" src="./images/dm-1_pttux2.png" alt="" srcset="">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <p class="text-white font-semibold text-xl">For Digital Marketers</p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-8">
+                            <p class="text-gray-500 text-left">
+                                Drive retention by scheduling updates 
+                                and marketing campaigns to your  customers anywhere in the world
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-16 max-w-6xl  mx-auto px-16 md:px-12 xl:px-16">
+                <div class="text-center py-8 hidden md:block">
+                    <p class="text-gray-500">THESE PRODUCTS ARE DESIGNED TO HELP YOU</p>
+                    <h2 class="text-gray-600 font-regular text-3xl">Start Engaging Your Customers</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-y-16">
+
+                    <div class="flex  items-center justify-start">
+                        <div class="text-left">
+                            <p class="text-gray-800 py-6">SWITCH</p>
+
+                            <h1 class="text-3xl md:text-xl lg:text-3xl text-blue-900 text-left font-semibold">Deliver messages efficiently.</h1>
+    
+                            <p class="lg:text-base text-sm text-gray-800 py-6">Enhance customer loyalty and retention by <br> guaranteeing the delivery of messages across <br> channels like sms, voice and whatsapp</p>
+    
+                            <a class=" text-blue-900 font-semibold" href="#">Explore ⇢</a>
+                        </div>
+                    </div>
+    
+                    <div class="hidden md:block">
+                        <img class="bounce" src="./images/new-switch-artwork_unkdck.png" alt="" srcset="">
+                    </div>
+
+                    <div class="hidden md:block">
+                        <img class="bounce" src="./images/new-token-artwork_vkerwx.png" alt="" srcset="">
+                    </div>
+
+                    <div class="flex  items-center justify-start">
+                        <div class="text-left">
+                            <p class="text-gray-800 py-6">TOKEN</p>
+
+                            <h1 class="text-3xl md:text-xl lg:text-3xl  text-blue-900 text-left font-semibold">Secure transactions for users.</h1>
+    
+                            <p class="text-sm lg:text-base text-gray-800 py-6">Verify and approve your customers’ transactions by delivering to their mobile devices secure one-time passwords</p>
+    
+                            <a class=" text-blue-900 font-semibold" href="#">Explore ⇢</a>
+                        </div>
+                    </div>
+
+                    <div class="flex  items-center justify-start">
+                        <div class="text-left">
+                            <p class="text-gray-800 py-6">INSIGHT</p>
+
+                            <h1 class="text-3xl md:text-xl lg:text-3xl  text-blue-900 text-left font-semibold">Retrieve real-time reports</h1>
+    
+                            <p class="text-sm lg:text-base text-gray-800 py-6">Save money on each message you send out by getting deep insights about your customers’ contacts</p>
+    
+                            <a class=" text-blue-900 font-semibold" href="#">Explore ⇢</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <img class="bounce" src="./images/inss-1_p1rgkx.png" alt="" srcset="">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-900 to-blue-400 rounded-xl mx-12 mt-12">
+                <div class="max-w-6xl  mx-auto grid lg:grid-cols-2 text-white px-8 gap-x-16">
+                    <div class="py-16 md:py-0">
+                        <h2 class="text-2xl md:text-2xl lg:text-2xl xl:text-3xl py-8 text-left">Trusted by 3,259+ businesses.</h2>
+
+                        <p class="lg:text-basexl:text-lg text-left pb-8 hidden md:block">Thousands of fast growing businesses use Termii to  engage their customers daily.</p>
+
+                        <div class="flex items-center justify-start">
+                            <button class="py-2 px-4 bg-white text-blue-500 rounded-lg mb-12">View Case Studies</button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center hidden md:block">
+                        <div class="">
+                            <img src="./images/white-logos_abvwng.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-cols-2 pt-32 max-w-6xl  mx-auto px-32 gap-x-20 hidden lg:grid">
+
+                <div class="">
+                    <img class="bounce" src="./images/round-t.png" alt="" srcset="">
+                </div>
+
+                <div class="flex  items-center">
+                    <div class="">
+                        <h1 class="text-3xl xl:text-5xl font-bold text-blue-900 text-left">Over 23,716,015+</h1>
+                        <p class="text-left">TRANSACTIONS PROCESSED SO FAR..</p>
+
+                        <p class="text-gray-800 py-10 text-left">Through our APIs, We deliver millions of messages
+                            globally across different channels and mobile network operators</p>
+
+                        <div class="flex items-center justify-start">
+                            <button href="" class="py-2 px-6 bg-gradient-to-r from-blue-900 to-blue-400 rounded-lg text-white shadow-3xl">Request A Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <footer class="pb-12">
+            <div class="flex  max-w-6xl mx-auto px-16 md:px-12 xl:px-20">
+                <div class="pr-16">
+                     <!-- logo link-->
+                    <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+                        <img class="h-8" src="./images/logo.png" alt="" srcset="">
+                    </a>
+                    <p class="text-gray-800 pt-6">Termii helps businesses use messaging channels to verify and authenticate customer transactions</p>
+
+                    <div class="flex items-center pt-6">
+                        <img class="w-6" src="./images/download.png" alt="" srcset="">
+                        <select class="focus:outline-none focus:border-0 pl-3" name="" id="">
+                            <option selected>Select Language</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-8 flex items-center">
+                        <a href="">
+                            <img class="w-8" src="./images/facebook.png" alt="" srcset="">
+                        </a>
+                        <a class="px-2" href="">
+                            <img class="w-8" src="./images/twiter.png" alt="" srcset="">
+                        </a>
+                        <a class="px-2" href="">
+                            <img class="w-8" src="./images/in.png" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pr-16 flex-none hidden lg:block">
+                    <h2 class="font-semibold pb-6">COMPANY</h2>
+
+                    <ul class="text-gray-500">
+                        <li class="pb-4">
+                            <a href="">About Termii</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">Investor Relations</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">Contact us</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">Terms of service</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">Privacy Policies</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pr-16 hidden lg:block">
+                    <h2 class="font-semibold pb-6 flex items-center"><span>
+                        <img src="./images/us.png" alt="" srcset="">
+                    </span> SAN JOSE, CA</h2>
+
+                    <ul class="text-gray-500">
+                        <li class="pb-4">
+                            <a href="">2880 Zanker Road Suite 203
+                                San Jose CA 95134</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">1-669-241-1742</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">sales@termii.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" hidden lg:block">
+                    <h2 class="font-semibold pb-6 flex items-center"><span>
+                        <img src="./images/ng.png" alt="" srcset="">
+                    </span>ONIPANU, LAG</h2>
+
+                    <ul class="text-gray-500">
+                        <li class="pb-4">
+                            <a href="">150 Ikorodu Road, Onipanu,
+                                Lagos, Nigeria</a>
+                        </li>
+
+                        <li class="pb-4">
+                            <a href="">234-9022557951</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mx-auto pt-10  hidden lg:block">
+                <div class="hrr-5"></div>
+            </div>
+
+            <div class="text-center text-gray-500 pt-8  hidden lg:block footer">
+                <p>© 2021 Termii and its brands are property of Termii Inc. We collaborate with</p>
+                <p>fast growing brands to deliver great customer messaging experience for African businesses.</p>
+            </div>
+        </footer>
+    <script src="./anime/anime.2.2.0.js"></script>
+    <script src="./index.js"></script>
+</div>
+</body>
+</html>
